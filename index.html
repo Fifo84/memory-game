@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>משחק הזיכרון</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js" defer type="module"></script>
+</head>
+
+<body>
+
+    <h1>MEMORY GAME </h1>
+
+    <p>Attempts: <b class="counter">0</b> <span class="margin"></span> Timer: <b class="timer">00:00</b> </p>
+    <p class="player player1 player-active"><span></span> <span class="player1Score">0</span></p>
+    <p class="player player2"> <span></span> <span class="player2Score">0</span></p>
+    <div class="frame">
+        <div class="board"></div>
+    </div>
+
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Welcome to the Memory Game</h2>
+            <div class="explanation">
+                <h3>How to Play:</h3>
+                <p>1. Choose the number of players: 1 or 2.</p>
+                <p>2. Enter player names (for 2 players).</p>
+                <p>3. Choose numbers of pairs.</p>
+                <p>4. Click "Start Game" to begin.</p>
+                <p>5. Click on cards to reveal their numbers.</p>
+                <p>6. Match pairs of cards with the same number.</p>
+                <p>7. The player with the most matches wins!</p>
+            </div>
+            <p>Choose the number of players:</p>
+            <button id="onePlayerBtn">1 Player</button>
+            <button id="twoPlayersBtn">2 Players</button>
+
+            <div class="player-input">
+                <input type="text" id="playerNameInput1" placeholder="Enter Player1 Name">
+                <input type="text" id="playerNameInput2" placeholder="Enter Player2 Name">
+                <p>Choose the number of pairs (4-15):</p>
+                <input placeholder="choose number of pairs" type="number" id="pairsInput" min="4" max="15">
+                <button id="startGameBtn">Start Game</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
