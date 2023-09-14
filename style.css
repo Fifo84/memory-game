@@ -157,8 +157,6 @@ p {
   text-align: center;
 }
 
-/* Add this CSS at the end of your existing styles */
-
 .player-input {
   display: none;
   flex-direction: column;
