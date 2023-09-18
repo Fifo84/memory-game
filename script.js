@@ -12,7 +12,6 @@ const pairsInput = document.getElementById("pairsInput");
 const MIN_PAIRS = 4;
 const MAX_PAIRS = 15;
 
-// ------------------------
 const playerInput = document.querySelector(".player-input");
 const playerNameInput1 = document.getElementById("playerNameInput1");
 const playerNameInput2 = document.getElementById("playerNameInput2");
@@ -164,7 +163,6 @@ function check() {
         if (numberOfPlayers === 2) {
           switchTurn();
         } else {
-          // Add the class back to the current player when switching turns
           document
             .querySelector(".player-active")
             .classList.remove("player-active");
